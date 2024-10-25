@@ -1,0 +1,56 @@
+.parents{
+  background-color: rgb(160, 68, 68);
+  padding: 20px;
+
+
+ 
+}
+
+.parents div {
+  width: 80px;
+  height: 90px;
+  display: inline-block;
+}
+
+
+
+.top{
+  background-color: blue;
+  position: sticky;
+  top: 10px;
+
+ 
+}
+
+.right{
+  background-color: red;
+  position: sticky;
+  top: 10px;
+
+}
+
+.botton{
+  background-color: green;
+  position: sticky;
+  top: 10px;
+}
+
+.left{
+  background-color: orange;
+  position: sticky;
+  top: 10px;
+}
+
+.center{
+  background-color: rgb(104, 53, 53);
+  position: sticky;
+  top: 10px;
+ 
+}
+
+
+
+
+
+
+
