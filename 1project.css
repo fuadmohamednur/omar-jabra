@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Anybody", sans-serif;
+}
+
+.container{
+    width: min(90%, 1120px);
+    margin-inline: auto;
+}
+
+header{
+    background-color: #fafaf6;
+    height: 4.5rem;
+}
+
+.desktop-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.menu-link{
+    display: flex;
+    gap: 10px;
+}
+
+.menu-link li{
+    list-style: none;
+}
+
+.menu-link li a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #2b2b2b;
+}
+
+.menu-link li a:hover{
+    color: #5f6ad4;
+}
+
+.humbuger{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+.mobile-menu-action{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.btn-pramry, .btn-secondary{
+    display: inline-block;
+    background-color: #5f6ad4;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+
+.btn-secondary{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+
+
+
+@media(max-width: 768px){
+    .desktop-menu{
+        display: none;
+    }
+
+    header{
+        height: 0;
+    }
+
+    .humbuger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #5f6ad4;
+        position: absolute;
+        color: white;
+        width: 50px;
+        height: 50px;
+        top: 10%;
+        right: 5%;
+        border-radius: 50%;
+        font-size: 1.25rem;
+    }
+
+    .mobile-menu{
+        display: flex;
+        justify-content: center;
+        background-color: #2b2b2b;
+        position: fixed;
+        inset: 0 0 0 0 ;
+        color: white;
+    }
+
+    .mobile-menu .navigation{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5rem;
+        gap: 2.5rem;
+        width: 100%;
+    }
+
+    .mobile-menu .navigation .menu-link{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .mobile-menu h1 {
+        font-size: 2.3125rem;
+        font-weight: 700;
+        border-bottom: 1px solid white;
+        padding: 10px;
+    }
+
+    .mobile-menu a {
+        color: white !important;
+    }
+}
