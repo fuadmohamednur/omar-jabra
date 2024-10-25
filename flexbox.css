@@ -1,0 +1,56 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+ nav ul{
+  display: flex;
+ 
+  
+}
+
+nav ul li{
+  margin: 10px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.center{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box:nth-child(1){
+background-color: blue;
+flex: 1;
+}
+
+.box:nth-child(2){
+background-color: red;
+flex: 2;
+}
+
+.box:nth-child(3){
+background-color: green;
+flex: 1;
+}
+
+.box{
+  background-color: antiquewhite;
+  margin: 10px;
+  padding: 20px;
+}
